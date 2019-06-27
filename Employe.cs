@@ -13,7 +13,7 @@ namespace myfirstproject
             set { salaire = value; }
         }
 
-        public Employe(string nom, string prenom, DateTime d,double salaire):base(nom,prenom,d)
+        public Employe(string nom, string prenom, DateTime d,double salaire,int num):base(nom,prenom,d,num)
         {
 
             this.salaire = salaire;

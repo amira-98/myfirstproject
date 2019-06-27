@@ -51,7 +51,7 @@ namespace myfirstproject
             }
             return p;
         }
-        static void menu(List<Article> Stock)
+        static void menustock(List<Article> Stock)
         {
             int choix, num, quantite, p;
             double prix;
@@ -59,7 +59,7 @@ namespace myfirstproject
             
             do
             {
-                Console.Out.WriteLine("*******************************Menu*****************************");
+                Console.Out.WriteLine("*******************************Menu Gestion du stock *****************************");
                 Console.Out.WriteLine("1-Rechercher un article par numéro");
                 Console.Out.WriteLine("2-Ajouter un article");
                 Console.Out.WriteLine("3-Supprimer un article par numéro");
@@ -238,6 +238,7 @@ namespace myfirstproject
             Console.ReadKey();
 
         }
+      
         static void Main(string[] args)
         {
 
@@ -245,7 +246,7 @@ namespace myfirstproject
             inittab(persons);
             affichertab(persons);
             List<Article> stock = new List<Article>();
-            menu(stock);
+            menustock(stock);
 
 
         }

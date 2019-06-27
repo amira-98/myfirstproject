@@ -14,7 +14,7 @@ namespace myfirstproject
             set { service = value; }
         }
 
-        public Chef(double salaire,string nom,string prenom,DateTime d ,string service) : base(nom,prenom,d,salaire)
+        public Chef(double salaire,string nom,string prenom,DateTime d ,string service,int num) : base(nom,prenom,d,salaire,num)
         {
             this.service = service;
         }
